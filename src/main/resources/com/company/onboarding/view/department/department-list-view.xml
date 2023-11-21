@@ -6,7 +6,9 @@
     <data>
         <collection id="departmentsDc"
                     class="com.company.onboarding.entity.Department">
-            <fetchPlan extends="_base"/>
+            <fetchPlan extends="_base">
+                <property name="hrManager" fetchPlan="_base"/>
+            </fetchPlan>
             <loader id="departmentsDl" readOnly="true">
                 <query>
                     <![CDATA[select e from Department e]]>
@@ -48,6 +50,7 @@
             </actions>
             <columns resizable="true">
                 <column property="name"/>
+                <column property="hrManager"/>
             </columns>
         </dataGrid>
         <hbox id="lookupActions" visible="false">

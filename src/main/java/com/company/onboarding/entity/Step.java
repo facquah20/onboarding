@@ -26,9 +26,9 @@ public class Step {
     @Column(name = "SORT_VALUE", nullable = false)
     private Integer sortValue;
 
-    @NotNull
     @Column(name = "DURATION", nullable = false)
-    private Integer duration;
+    @NotNull
+    private Integer duration = 0;
 
     @Column(name = "VERSION", nullable = false)
     @Version
