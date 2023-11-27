@@ -3,3 +3,7 @@
 .user-picture{
 object-fit:container;
 }
+
+vaadin-grid.onboarding-steps::part(overdue-step){
+color:red;
+}

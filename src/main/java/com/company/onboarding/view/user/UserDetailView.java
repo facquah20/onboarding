@@ -56,7 +56,7 @@ public class UserDetailView extends StandardDetailView<User> {
     private DataContext dataContext;
 
     @ViewComponent
-    private CollectionPropertyContainer<UserStep> stepsDc;
+    private CollectionPropertyContainer<UserStep> userStepDc;
 
     @Subscribe
     public void onInit(final InitEvent event) {
@@ -105,13 +105,13 @@ public class UserDetailView extends StandardDetailView<User> {
                 .query("select s from Step s order by s.sortValue asc")
                 .list();
         for(Step step : steps){
-            if(stepsDc.getItems().stream().noneMatch(userStep -> userStep.getStep().equals(step))){
+            if(userStepDc.getItems().stream().noneMatch(userStep -> userStep.getStep().equals(step))){
                 UserStep userStep = dataContext.create(UserStep.class);
                 userStep.setUser(user);
                 userStep.setStep(step);
                 userStep.setDueDate(user.getJoiningDate().plusDays(step.getDuration()));
                 userStep.setSortValue(step.getSortValue());
-                stepsDc.getMutableItems().add(userStep);
+                userStepDc.getMutableItems().add(userStep);
             }
         }
     }

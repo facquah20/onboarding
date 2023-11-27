@@ -53,9 +53,14 @@
                 </actions>
             </entityComboBox>
             <datePicker id="joiningDateField" property="joiningDate"/>
-            <fileStorageUploadField id="pictureField" property="picture" dataContainer="userDc"/>
-            <image height="10em" width="10em" id="image" property="picture" dataContainer="userDc"
-                   classNames="user-picture"/>
+            <details summaryText="Picture">
+                <hbox>
+                    <fileStorageUploadField id="pictureField" property="picture" dataContainer="userDc"/>
+                    <image height="10em" width="10em" id="image" property="picture" dataContainer="userDc"
+                           classNames="user-picture"/>
+                </hbox>
+            </details>
+
         </formLayout>
         <hbox id="buttonsPanel" classNames="buttons-panel">
             <button id="generateButton" text="Generate"/>
