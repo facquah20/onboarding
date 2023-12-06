@@ -1,31 +1,3 @@
-.jmix
-
-.gradle
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**
-!**/src/test/**
-
-# Remove this line if you want to follow recommendations in src/main/dev-bundle/README.md
-src/main/dev-bundle/
-
-### IntelliJ IDEA ###
-.idea/*
-!.idea/encodings.xml
-*.iws
-*.iml
-*.ipr
-out/
-/target/
-
-### VS Code ###
-.vscode/
-
-# The following files are generated/updated by vaadin-gradle-plugin
-node_modules/
-frontend/generated/
-pnpmfile.js
-vite.generated.ts
-webpack.generated.js
-
-.DS_Store
+version https://git-lfs.github.com/spec/v1
+oid sha256:018e5e0b32d0c7d301e7996619b587dbffaecb8d6a8cb71cc7eaa07342eca83e
+size 519

@@ -1,16 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<databaseChangeLog
-        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
-                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
-
-    <!-- DO NOT REMOVE. This is a master changelog that runs all other changelogs. -->
-
-    <include file="/io/jmix/data/liquibase/changelog.xml"/>
-    <include file="/io/jmix/flowuidata/liquibase/changelog.xml"/>
-    <include file="/io/jmix/securitydata/liquibase/changelog.xml"/>
-
-    <includeAll path="/com/company/onboarding/liquibase/changelog"/>
-
-</databaseChangeLog>
+version https://git-lfs.github.com/spec/v1
+oid sha256:b2d5e352f8819cc7bb545e1e04cb4c8b3eda68a48e46d1976684f379f26a44d0
+size 718

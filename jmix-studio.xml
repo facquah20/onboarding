@@ -1,20 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="JmixDataStoreSettingsManager">
-    <moduleSettings>
-      <entry key="com.company.onboarding.main">
-        <ModuleSettings>
-          <option name="dataStoreOptionsV2">
-            <map>
-              <entry key="main">
-                <value>
-                  <DataStoreSettingsV2 />
-                </value>
-              </entry>
-            </map>
-          </option>
-        </ModuleSettings>
-      </entry>
-    </moduleSettings>
-  </component>
-</project>
+version https://git-lfs.github.com/spec/v1
+oid sha256:39ec10fbabb0a0d7a4137de99994bbbd9880791e4970485d57442a05c14823ff
+size 542

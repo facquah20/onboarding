@@ -1,8 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<menu-config xmlns="http://jmix.io/schema/flowui/menu">
-
-    <menu id="application" title="msg://com.company.onboarding/menu.application.title" opened="true">
-        <item view="User.list" title="msg://com.company.onboarding.view.user/UserListView.title"/>
-    </menu>
-
-</menu-config>
+version https://git-lfs.github.com/spec/v1
+oid sha256:b255dd6151434f0b0591bea8335311e4a2b40569d82ce17f3d712bfeb933506b
+size 340

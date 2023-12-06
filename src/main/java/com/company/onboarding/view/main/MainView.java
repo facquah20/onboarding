@@ -1,12 +1,3 @@
-package com.company.onboarding.view.main;
-
-import com.vaadin.flow.router.Route;
-import io.jmix.flowui.app.main.StandardMainView;
-import io.jmix.flowui.view.ViewController;
-import io.jmix.flowui.view.ViewDescriptor;
-
-@Route("")
-@ViewController("MainView")
-@ViewDescriptor("main-view.xml")
-public class MainView extends StandardMainView {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2d8d9bd620f8a2e55d02b5b065b7199b574c77155dc7226accb2c26f51c90cb9
+size 339

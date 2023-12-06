@@ -1,23 +1,3 @@
-package com.company.onboarding.security;
-
-import io.jmix.security.model.EntityAttributePolicyAction;
-import io.jmix.security.model.EntityPolicyAction;
-import io.jmix.security.role.annotation.EntityAttributePolicy;
-import io.jmix.security.role.annotation.EntityPolicy;
-import io.jmix.security.role.annotation.ResourceRole;
-import io.jmix.security.role.annotation.SpecificPolicy;
-import io.jmix.securityflowui.role.annotation.MenuPolicy;
-import io.jmix.securityflowui.role.annotation.ViewPolicy;
-
-@ResourceRole(name = "Full Access", code = FullAccessRole.CODE)
-public interface FullAccessRole {
-
-    String CODE = "system-full-access";
-
-    @EntityPolicy(entityName = "*", actions = {EntityPolicyAction.ALL})
-    @EntityAttributePolicy(entityName = "*", attributes = "*", action = EntityAttributePolicyAction.MODIFY)
-    @ViewPolicy(viewIds = "*")
-    @MenuPolicy(menuIds = "*")
-    @SpecificPolicy(resources = "*")
-    void fullAccess();
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:731926ae3817e1647418349ed4ba752733067625bc01a44354a549f5f61945fe
+size 938

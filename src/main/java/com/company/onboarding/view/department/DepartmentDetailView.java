@@ -1,15 +1,3 @@
-package com.company.onboarding.view.department;
-
-import com.company.onboarding.entity.Department;
-
-import com.company.onboarding.view.main.MainView;
-
-import com.vaadin.flow.router.Route;
-import io.jmix.flowui.view.*;
-
-@Route(value = "departments/:id", layout = MainView.class)
-@ViewController("Department.detail")
-@ViewDescriptor("department-detail-view.xml")
-@EditedEntityContainer("departmentDc")
-public class DepartmentDetailView extends StandardDetailView<Department> {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e3f35f46947db26b471e32b6cedbf52bec223125dfacf901579041fd44502872
+size 475

@@ -1,15 +1,3 @@
-package com.company.onboarding.view.step;
-
-import com.company.onboarding.entity.Step;
-
-import com.company.onboarding.view.main.MainView;
-
-import com.vaadin.flow.router.Route;
-import io.jmix.flowui.view.*;
-
-@Route(value = "steps/:id", layout = MainView.class)
-@ViewController("Step.detail")
-@ViewDescriptor("step-detail-view.xml")
-@EditedEntityContainer("stepDc")
-public class StepDetailView extends StandardDetailView<Step> {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:91dca2674a987ddc68e00d0e6c4493d3231d28bacab963b94df8ba4ee90d5812
+size 427

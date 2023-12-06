@@ -1,30 +1,3 @@
-package com.company.onboarding.test_support;
-
-import io.jmix.core.security.SystemAuthenticator;
-import org.junit.jupiter.api.extension.AfterEachCallback;
-import org.junit.jupiter.api.extension.BeforeEachCallback;
-import org.junit.jupiter.api.extension.ExtensionContext;
-import org.springframework.context.ApplicationContext;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
-
-/**
- * JUnit extension for providing system authentication in integration tests.
- * Should be used in {@code @ExtendWith} annotation on the test class.
- */
-public class AuthenticatedAsAdmin implements BeforeEachCallback, AfterEachCallback {
-
-    @Override
-    public void beforeEach(ExtensionContext context) {
-        getSystemAuthenticator(context).begin("admin");
-    }
-
-    @Override
-    public void afterEach(ExtensionContext context) {
-        getSystemAuthenticator(context).end();
-    }
-
-    private SystemAuthenticator getSystemAuthenticator(ExtensionContext context) {
-        ApplicationContext applicationContext = SpringExtension.getApplicationContext(context);
-        return applicationContext.getBean(SystemAuthenticator.class);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:634cb378ab5d010042d5ffb292ae418cb78326822237aa431013f7fd0c9208e8
+size 1150
